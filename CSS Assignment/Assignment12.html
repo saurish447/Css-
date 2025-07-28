@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .main > div{
+            height: 100px;
+            width: 250px;
+            background-color: aqua;
+            text-align: center;
+            margin: 5px;
+            font-size: 25px;
+            border: 2px solid black;
+            animation-name: move;
+            animation-duration: 3s;
+            animation-iteration-count: infinite; 
+            position: relative;
+        }
+        .child1{
+            animation-timing-function: linear;
+        }
+         @keyframes move {
+            from{
+                left: 0px ;
+                background-color: aqua;
+            }
+            to{
+                left: 400px;
+                background-color: blue;
+            }
+        }
+        
+        </style>
+</head>
+<body>
+    <div class="main">
+    <div class="child1" >linear</div>
+</body>
+</html>

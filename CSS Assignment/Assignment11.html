@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       div{
+        border: 2px solid blueviolet;
+           height: auto;
+            width: auto;
+            background-color: aqua;
+            margin-left: 200px;
+            margin-top: 200px;
+            font-family: cursive;
+            transform: rotate(10deg); 
+       }
+    
+       main{
+        color: green;
+       }
+       footer{
+        color: lawngreen;
+       }
+       body{
+        background-color: black;
+       }
+       div:nth-child(1)
+      {
+        background-color: red;
+      }
+      div::before{
+        content: "***";
+       }
+       div::first-letter{
+        color: aqua;
+      }
+    </style>
+</head>
+<body>
+    <div><header>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero temporibus placeat ut laborum eaque accusantium, minima unde reiciendis et vitae ipsam! Mollitia architecto quas aliquid consequuntur provident, quasi maxime vitae.</header></div>
+    <div><main> Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis molestias, ullam quo accusantium perspiciatis molestiae, ad labore recusandae sequi dignissimos tenetur voluptatibus voluptas, ex facilis reprehenderit amet dolor voluptates! Nobis.</main></div>
+    <div><footer>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil architecto accusantium exercitationem quo iusto dolore sequi beatae officiis inventore! Officiis placeat non at maiores doloremque dolores ad expedita dolore explicabo?</footer></div>
+</body>
+</html>
